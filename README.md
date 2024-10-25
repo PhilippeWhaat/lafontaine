@@ -1,7 +1,14 @@
 # 🦊 Générateur de Fables Aléatoires de La Fontaine 🐜
-
-Bienvenue dans le **Générateur de Fables Aléatoires de La Fontaine** ! 🎉 Ce projet vous permet de créer de manière aléatoire des fables inspirées des œuvres de Jean de La Fontaine, mélangeant les vers tout en respectant le schéma de rimes pour obtenir des créations uniques à chaque génération.
-
+<table>
+  <tr>
+    <td>
+      <p>Bienvenue dans le <strong>Générateur de Fables Aléatoires de La Fontaine</strong> ! 🎉 Ce projet vous permet de créer de manière aléatoire des fables inspirées des œuvres de Jean de La Fontaine, mélangeant les vers tout en respectant le schéma de rimes pour obtenir des créations uniques à chaque génération.</p>
+    </td>
+    <td>
+      <img src="./logo.png" alt="Logo du projet" width="1500"/>
+    </td>
+  </tr>
+</table>
 ---
 
 ## 📋 Description
