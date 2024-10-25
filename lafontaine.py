@@ -41,9 +41,18 @@ def generate_rhymed_fable(verse_count):
     # Retourner la fable générée
     return "\n".join(generated_fable)
 
-# Interface Streamlit
-st.title("Générateur de Fables Aléatoires de La Fontaine")
-st.write("Entrez le nombre de vers pour générer une fable aléatoire inspirée de La Fontaine.")
+# URL du logo
+logo_url = "https://raw.githubusercontent.com/PhilippeWhaat/lafontaine/refs/heads/main/logo.png"
+
+# Créer deux colonnes pour aligner le texte à gauche et le logo à droite
+col1, col2 = st.columns([3, 1])  # Ajuster les proportions si nécessaire
+
+with col1:
+    st.title("Générateur de Fables Aléatoires de La Fontaine")
+    st.write("Entrez le nombre de vers pour générer une fable aléatoire inspirée de La Fontaine.")
+
+with col2:
+    st.image(logo_url, width=150)
 
 # Sélection de l'utilisateur pour le nombre de vers
 verse_count = st.slider("Nombre de vers dans la fable", min_value=1, max_value=40, value=10)
@@ -53,3 +62,10 @@ if st.button("Générer la fable"):
     random_fable = generate_rhymed_fable(verse_count)
     st.subheader("Votre fable générée :")
     st.text(random_fable)
+
+# Ajouter des crédits en bas de la page avec un lien vers GitHub
+st.markdown("---")
+st.markdown(
+    "✨ Créé par [PhilippeWhaat](https://github.com/PhilippeWhaat) | "
+    "Inspiré par Piroteknik. Merci pour votre visite !"
+)
