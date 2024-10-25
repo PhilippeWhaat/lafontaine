@@ -19,7 +19,6 @@ Icon?
 # Document files to ignore
 *.xlsx
 *.xls
-*.txt
 *.doc
 *.docx
 
